@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CICDTest.unity
+    guid: 526acf61f45a92340ba05a4be5683a97
   m_configObjects: {}

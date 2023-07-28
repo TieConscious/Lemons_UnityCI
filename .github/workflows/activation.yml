@@ -2,6 +2,11 @@ name: Acquire activation file
 on:
   workflow_dispatch: {}
 jobs:
+  testRunner:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: 
   activation:
     name: Request manual activation file 🔑
     runs-on: ubuntu-latest
