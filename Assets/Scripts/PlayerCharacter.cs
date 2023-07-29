@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerCharacter : MonoBehaviour
 {
     public float moveSpeed = 10f;
     public float turnSpeed = 20f;
+    public GameObject head;
 
     private Animator _animator;
     private Rigidbody _rb;

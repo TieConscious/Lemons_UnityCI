@@ -1,9 +1,6 @@
 name: Build project
 
 on:
-  push:
-    branches:
-      - main
   workflow_run:
     workflows: [Test Runner]
     types:
@@ -11,6 +8,7 @@ on:
 
 jobs:
   buildForAllSupportedPlatforms:
+    if: ${{ github.event.workflow_run.head_branch == 'main' }}
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: ubuntu-latest
     strategy:
