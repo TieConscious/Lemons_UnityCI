@@ -1,6 +1,9 @@
 name: Build project
 
 on:
+  push:
+    branches:
+      - main
   workflow_run:
     workflows: [Test Runner]
     types:
